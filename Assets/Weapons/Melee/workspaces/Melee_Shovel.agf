@@ -1,6 +1,6 @@
 AnimSrcGraphFile {
  Sheets {
-  AnimSrcGraphSheet Grenade_M67 {
+  AnimSrcGraphSheet Melee_Shovel {
    Nodes {
     AnimSrcNodeGroupSelect "UnpinPneG 19216" {
      EditorPos 19 -9.7

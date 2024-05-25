@@ -1,5 +1,5 @@
 AnimSetInstanceSource "{5E127C905CB10D2C}" {
- Template "{27A7D4B7660BE77D}Assets/Weapons/Grenades/workspaces/Grenade_M67.ast"
+ Template "{27A7D4B7660BE77E}Assets/Weapons/Melee/workspaces/Melee_Shovel.ast"
  Lines {
   AnimSetInstanceSource_Line "Actions.Cro.Pin" {
    Resource "{9F23F45D0493BC5C}Assets/Weapons/Grenades/M67/anims/anm/p_cro_repin_M67.anm"

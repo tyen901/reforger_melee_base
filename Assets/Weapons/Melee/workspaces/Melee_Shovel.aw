@@ -1,10 +1,10 @@
 BaseSource {
- AnimSetTemplate "{27A7D4B7660BE77D}Assets/Weapons/Grenades/workspaces/Grenade_M67.ast"
+ AnimSetTemplate "{27A7D4B7660BE77E}Assets/Weapons/Melee/workspaces/Melee_Shovel.ast"
  AnimSetInstances {
-  "{D83FE76C4DC76160}Assets/Weapons/Grenades/workspaces/Grenade_M67.asi"
-  "{6D0438DAFBBBA1EE}Assets/Weapons/Grenades/workspaces/Player_M67.asi"
+  "{6D0438DAFBBBA1EE}Assets/Weapons/Melee/workspaces/Player_Shovel.asi"
+  "{D83FE76C4DC76161}Assets/Weapons/Melee/workspaces/Melee_Shovel.asi"
  }
- AnimGraph "{3555B2B751CE338E}Assets/Weapons/Grenades/workspaces/Grenade_M67.agr"
+ AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Shovel.agr"
  PreviewModels {
   AnimSrcWorkspacePreviewModel "{5AF8A0208A751B95}" {
    Model "{7297BDBDE223627F}Assets/Characters/Animation/AnimTestChar_USSR_01.xob"
