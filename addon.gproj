@@ -1,0 +1,8 @@
+GameProject {
+ ID "melee"
+ GUID "61715EB3EF765F76"
+ TITLE "melee"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}

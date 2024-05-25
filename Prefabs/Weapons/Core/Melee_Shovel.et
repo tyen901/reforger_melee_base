@@ -1,0 +1,10 @@
+GenericEntity : "{69FC0AAC5FFE1288}Prefabs/Weapons/Core/Melee_Base.et" {
+ ID "50989DC991E68512"
+ components {
+  MeshObject "{6171607541F7E089}" {
+   Object "{DD5A93FBA0216BEA}Assets/Props/Services/FireExtinguisherBox_01/FireExtinguisherBox_01_Shovel.xob"
+  }
+  SCR_MeleeWeaponProperties "{61716216FD113DD0}" {
+  }
+ }
+}

@@ -1,0 +1,19 @@
+AnimSetTemplateSource {
+ Groups {
+  AnimSetTemplateSource_AnimationGroup "{5190B003BFBD8BB3}" {
+   Name "Actions"
+   Animations {
+    "Pin"
+    "PinUpper"
+    "Unpin"
+    "UnpinUpper"
+   }
+   Columns {
+    "Adj"
+    "Cro"
+    "Erc"
+    "Pne"
+   }
+  }
+ }
+}

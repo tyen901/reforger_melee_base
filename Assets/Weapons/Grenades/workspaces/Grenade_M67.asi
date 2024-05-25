@@ -1,0 +1,55 @@
+AnimSetInstanceSource "{5E127C905CAEFC3F}" {
+ Template "{27A7D4B7660BE77D}Assets/Weapons/Grenades/workspaces/Grenade_M67.ast"
+ Lines {
+  AnimSetInstanceSource_Line "Actions.Cro.Pin" {
+   Resource "{7EF88769F8C75EA0}Assets/Weapons/Grenades/M67/anims/anm/w_cro_repin_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Cro.PinUpper" {
+   Resource "{DD1F869BF7B6447A}Assets/Weapons/Grenades/M67/anims/anm/w_cro_repin_upper_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Cro.Unpin" {
+   Resource "{D1FEEBFED3FA8752}Assets/Weapons/Grenades/M67/anims/anm/w_cro_unpin_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Cro.UnpinUpper" {
+   Resource "{D4E027DB464EB2ED}Assets/Weapons/Grenades/M67/anims/anm/w_cro_unpin_upper_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Erc.Pin" {
+   Resource "{543A1FF564463565}Assets/Weapons/Grenades/M67/anims/anm/w_erc_repin_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Erc.PinUpper" {
+   Resource "{AF3757EDCB5EE03E}Assets/Weapons/Grenades/M67/anims/anm/w_erc_repin_upper_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Erc.Unpin" {
+   Resource "{FB3C73624F7BEC97}Assets/Weapons/Grenades/M67/anims/anm/w_erc_unpin_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Erc.UnpinUpper" {
+   Resource "{A6C8F6AD7AA616A9}Assets/Weapons/Grenades/M67/anims/anm/w_erc_unpin_upper_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Pne.Pin" {
+   Resource "{BE798AF1AAF05AAB}Assets/Weapons/Grenades/M67/anims/anm/w_pne_repin_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Adj.UnpinUpper" {
+   Resource "{D4E027DB464EB2ED}Assets/Weapons/Grenades/M67/anims/anm/w_cro_unpin_upper_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Pne.Unpin" {
+   Resource "{117FE66681CD8359}Assets/Weapons/Grenades/M67/anims/anm/w_pne_unpin_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Adj.PinUpper" {
+   Resource "{DD1F869BF7B6447A}Assets/Weapons/Grenades/M67/anims/anm/w_cro_repin_upper_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Adj.Pin" {
+   Resource "{D12CD2143DFA8850}Assets/Weapons/Grenades/M67/anims/anm/w_adj_repin_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Adj.Unpin" {
+   Resource "{7E2ABE8316C751A2}Assets/Weapons/Grenades/M67/anims/anm/w_adj_unpin_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Pne.PinUpper" {
+   Resource "{22013AA81FB34C73}Assets/Weapons/Grenades/M67/anims/anm/w_pne_repin_upper_M67.anm"
+  }
+  AnimSetInstanceSource_Line "Actions.Pne.UnpinUpper" {
+   Resource "{2BFE9BE8AE4BBAE4}Assets/Weapons/Grenades/M67/anims/anm/w_pne_unpin_upper_M67.anm"
+  }
+ }
+ RBF AnimSetInstanceSourceRBFArray "{5AE4E2F8D9F17DED}" {
+ }
+}
