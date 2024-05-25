@@ -2,7 +2,7 @@ BaseSource {
  AnimSetTemplate "{27A7D4B7660BE77E}Assets/Weapons/Melee/workspaces/Melee_Shovel.ast"
  AnimSetInstances {
   "{6D0438DAFBBBA1EE}Assets/Weapons/Melee/workspaces/Player_Shovel.asi"
-  "{D83FE76C4DC76161}Assets/Weapons/Melee/workspaces/Melee_Shovel.asi"
+  "{D83FE76C4DC76161}Assets/Weapons/Melee/workspaces/Weapon_Shovel.asi"
  }
  AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Shovel.agr"
  PreviewModels {

@@ -32,8 +32,8 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
      RestingAdditiveOffsetLS -0.02 0 0
     }
     ItemAnimationAttributes ItemAnimationAttributes "{5284960F659FDDA7}" {
-     AnimationInstance "{41AABAE44257A657}anims/workspaces/player/player_main_pistol.asi"
-     AnimationIKPose "{6AAD163C7072AF0F}Assets/Weapons/Handguns/M9/anims/anm/p_m9_ik.anm"
+     AnimationInstance "{6438954FFD3800CF}anims/workspaces/player/player_main.asi"
+     AnimationIKPose "{B26FF590CB1A7B6C}Assets/Weapons/Grenades/M67/anims/anm/p_m67_ik.anm"
     }
     CustomAttributes {
      SCR_RecoilCameraShakeParams "{58DEF2AB0413E346}" {
@@ -110,13 +110,13 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
      }
     }
     WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
-     AnimGraph "{6BEAF3C123F42BCC}Assets/Weapons/Handguns/workspaces/pistol_type.agr"
-     AnimInstance "{D09FB3E645475221}Assets/Weapons/Handguns/workspaces/pistol_main_beretta.asi"
+     AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Shovel.agr"
+     AnimInstance "{D83FE76C4DC76161}Assets/Weapons/Melee/workspaces/Weapon_Shovel.asi"
      StartNode "IdleFireSTM"
      AlwaysActive 1
      AnimInjection AnimationAttachmentInfo "{61716214B8666610}" {
-      AnimGraph "{6BEAF3C123F42BCC}Assets/Weapons/Handguns/workspaces/pistol_type.agr"
-      AnimInstance "{99EBECB3B5D9BB30}Assets/Weapons/Handguns/workspaces/player_main_m9.asi"
+      AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Shovel.agr"
+      AnimInstance "{D447350B6157E562}Assets/Weapons/Melee/workspaces/Player_main_Shovel.asi"
       StartNode "IdleFireSTM"
       BindingName "Weapon"
      }
@@ -126,6 +126,8 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
      }
     }
    }
+   WeaponType None
+   AllowedRaise "Only lowered"
    SoundInt 1010200
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
     Name "#AR-Weapon_BerettaM9_Name"
