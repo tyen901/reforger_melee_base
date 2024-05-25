@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{3555B2B751CE338F}Assets/Weapons/Grenades/workspaces/Grenade_M67.agr"
+ Name "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Grenade_M67.agr"
  Configurations {
   AnimGraphResourceClass PC {
   }
