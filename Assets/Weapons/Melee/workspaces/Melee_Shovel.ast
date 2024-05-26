@@ -15,15 +15,5 @@ AnimSetTemplateSource {
     "Pne"
    }
   }
-  AnimSetTemplateSource_AnimationGroup "{61722B84E8E69FCA}" {
-   Name "MeleeAttacks"
-   Animations {
-    "MeleeAttacks01"
-   }
-   Columns {
-    "ErcLow"
-    "ErcRas"
-   }
-  }
  }
 }

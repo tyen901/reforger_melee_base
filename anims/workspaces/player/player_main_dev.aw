@@ -10,6 +10,7 @@ BaseSource {
   "{5243F3D5D0BEE57E}anims/workspaces/player/player_main_m72.asi"
   "{AF06D3F738A50403}anims/workspaces/player/player_main_heavy.asi"
   "{6438954FFD3800CF}anims/workspaces/player/player_main_melee.asi"
+  "{42D4D966167FDF21}anims/workspaces/player/player_main_1h_melee.asi"
  }
  AnimGraph "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
  PreviewModels {

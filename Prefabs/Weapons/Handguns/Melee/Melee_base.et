@@ -7,7 +7,7 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
    }
   }
   MeshObject "{CFBAA4B701F95D69}" {
-   Object "{DD5A93FBA0216BEA}Assets/Props/Services/FireExtinguisherBox_01/FireExtinguisherBox_01_Shovel.xob"
+   Object "{86583FFA2C86FB07}Assets/Weapons/Melee/melee.xob"
   }
   RigidBody "{61716214B866664C}" {
    SimState None
@@ -32,8 +32,8 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
      RestingAdditiveOffsetLS -0.02 0 0
     }
     ItemAnimationAttributes ItemAnimationAttributes "{5284960F659FDDA7}" {
-     AnimationInstance "{6438954FFD3800CF}anims/workspaces/player/player_main.asi"
-     AnimationIKPose "{B26FF590CB1A7B6C}Assets/Weapons/Grenades/M67/anims/anm/p_m67_ik.anm"
+     AnimationInstance "{42D4D966167FDF21}anims/workspaces/player/player_main_1h_melee.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
     }
     CustomAttributes {
      SCR_RecoilCameraShakeParams "{58DEF2AB0413E346}" {
@@ -44,7 +44,12 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
   WeaponComponent "{CFBAA4B706BA66E8}" {
    components {
     AttachmentSlotComponent "{B502E4DC8A9E835E}" {
-     Enabled 0
+     AttachmentSlot InventoryStorageSlot optics {
+      PivotID "root"
+      Offset 0 0 0.02
+      Enabled 1
+      Prefab "{5964F2A479BD20E6}Prefabs/Props/Services/Bayonet_01.et"
+     }
     }
     SightsComponent "{BB23A637957CFFF8}" {
      SightsPosition PointInfo "{BB23A63796688E69}" {

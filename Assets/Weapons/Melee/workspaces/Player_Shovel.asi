@@ -49,12 +49,6 @@ AnimSetInstanceSource "{5E127C905CB10D2C}" {
   AnimSetInstanceSource_Line "Actions.Adj.UnpinUpper" {
    Resource "{33534C0600DC6BAF}Assets/Weapons/Grenades/M67/anims/anm/p_cro_unpin_upper_M67.anm"
   }
-  AnimSetInstanceSource_Line "MeleeAttacks.ErcRas.MeleeAttacks01" {
-   Resource "{3FC776487459AD54}anims/anm/player/attacks/rpg/p_rpg_erc_attack_slash_melee_ras.anm"
-  }
-  AnimSetInstanceSource_Line "MeleeAttacks.ErcLow.MeleeAttacks01" {
-   Resource "{72CE3D483612B5E5}anims/anm/player/attacks/rpg/p_rpg_erc_attack_slash_melee_low.anm"
-  }
  }
  RBF AnimSetInstanceSourceRBFArray "{5AE4E2F8D9F17D1D}" {
  }
