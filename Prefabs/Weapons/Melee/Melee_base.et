@@ -16,7 +16,6 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
   SCR_MeleeWeaponProperties "{61716214B8666655}" {
    m_fDamage 30
    m_fRange 2
-   m_fAccuracy 0.7
   }
   SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
    Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
@@ -52,6 +51,7 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
      }
     }
     SightsComponent "{BB23A637957CFFF8}" {
+     Enabled 0
      SightsPosition PointInfo "{BB23A63796688E69}" {
       PivotID "eye"
       Offset 0 0 -0.2
@@ -72,6 +72,7 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
      m_iOpticDOFDistanceScale 225
     }
     MuzzleComponent "{50F64C45E7271D47}" {
+     Enabled 0
      components {
       CaseEjectingEffectComponent "{5122AAD190FCA21D}" {
        Enabled 0
@@ -126,7 +127,7 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
       BindingName "Weapon"
      }
      BindWithInjection 1
-     AnimVariablesToBind + {
+     AnimVariablesToBind {
       "State"
      }
     }
@@ -135,8 +136,8 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
    AllowedRaise "Only lowered"
    SoundInt 1010200
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
-    Name "#AR-Weapon_BerettaM9_Name"
-    Description "#AR-Weapon_BerettaM9_Description"
+    Name "Melee"
+    Description "Basic Melee"
     Icon ""
    }
   }
