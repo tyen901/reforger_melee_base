@@ -13,6 +13,8 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
    SimState None
    ModelGeometry 1
   }
+  SCR_MeleeAttackComponent "{61889E6B17739D5A}" {
+  }
   SCR_MeleeWeaponProperties "{61716214B8666655}" {
    m_fDamage 30
    m_fRange 2
@@ -47,7 +49,7 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
       PivotID "root"
       Offset 0 0 0.02
       Enabled 1
-      Prefab "{5964F2A479BD20E6}Prefabs/Props/Services/Bayonet_01.et"
+      Prefab "{5964F2A479BD20E6}Prefabs/Props/Services/Melee_Bayonet_01.et"
      }
     }
     SightsComponent "{BB23A637957CFFF8}" {
@@ -108,7 +110,7 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
      DispersionDiameter 0.4
      DispersionRange 50
      WeaponAimModifiers {
-      RecoilWeaponAimModifier "{58FCF59C4258A0B9}" : "{7EE41322045592D4}Prefabs/Weapons/Core/Recoil/Handgun_9_recoil.conf" {
+      RecoilWeaponAimModifier "{58FCF59C4258A0B9}" {
       }
      }
      MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
@@ -116,13 +118,13 @@ GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
      }
     }
     WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
-     AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Shovel.agr"
-     AnimInstance "{D83FE76C4DC76161}Assets/Weapons/Melee/workspaces/Weapon_Shovel.asi"
+     AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Base.agr"
+     AnimInstance "{D83FE76C4DC76161}Assets/Weapons/Melee/workspaces/Weapon_Melee.asi"
      StartNode "IdleFireSTM"
      AlwaysActive 1
      AnimInjection AnimationAttachmentInfo "{61716214B8666610}" {
-      AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Shovel.agr"
-      AnimInstance "{D447350B6157E562}Assets/Weapons/Melee/workspaces/Player_main_Shovel.asi"
+      AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Base.agr"
+      AnimInstance "{D447350B6157E562}Assets/Weapons/Melee/workspaces/Player_main_Melee.asi"
       StartNode "IdleFireSTM"
       BindingName "Weapon"
      }
