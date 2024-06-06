@@ -10,12 +10,12 @@ class SCR_MeleeAttackComponentClass: ScriptComponentClass
 class SCR_MeleeAttackComponent: ScriptComponent
 {
     InputManager m_InputManager;
-    IEntity m_owner;
+    IEntity m_Owner;
     IEntity m_Player;
 
     override void OnPostInit(IEntity owner)
     {
-        m_owner = owner;
+        m_Owner = owner;
         m_InputManager = GetGame().GetInputManager();
         owner.SetFlags(EntityFlags.ACTIVE, false);
         SetEventMask(owner, EntityEvent.FRAME);
@@ -42,7 +42,7 @@ class SCR_MeleeAttackComponent: ScriptComponent
     {
         m_Player = EntityUtils.GetPlayer();
         
-        if (m_Player == null)
+        if (!m_Player)
             return;
         
 		ChimeraCharacter character = ChimeraCharacter.Cast(m_Player);
@@ -55,19 +55,10 @@ class SCR_MeleeAttackComponent: ScriptComponent
 		
 		CharacterInputContext inputContext = controller.GetInputContext();
 
-        if (inputContext == null)
+        if (!inputContext)
             return;
 
         inputContext.SetMeleeAttack(true);
-
-        return;
-        
-        CharacterAnimationComponent m_CharacterAnimation = CharacterAnimationComponent.Cast(m_Player.FindComponent(CharacterAnimationComponent));
-        SCR_CharacterCommandHandlerComponent characterCommandHandler = SCR_CharacterCommandHandlerComponent.Cast(m_CharacterAnimation.FindComponent(SCR_CharacterCommandHandlerComponent));
-        characterCommandHandler.GetCommandModifier_Melee().Attack();
-        
-        SCR_MeleeComponent m_MeleeComponent = SCR_MeleeComponent.Cast(m_Player.FindComponent(SCR_MeleeComponent));
-        m_MeleeComponent.PerformAttack();
     }
 }
 
