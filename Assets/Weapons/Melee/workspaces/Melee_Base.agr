@@ -1,5 +1,5 @@
 AnimSrcGraph {
- AnimSetTemplate "{27A7D4B7660BE77E}Assets/Weapons/Melee/workspaces/Melee_Shovel.ast"
+ AnimSetTemplate "{27A7D4B7660BE77E}Assets/Weapons/Melee/workspaces/Melee_Base.ast"
  ControlTemplate AnimSrcGCT "{53068B507795F8EF}" {
   Variables {
    AnimSrcGCTVarInt Stance {
@@ -35,7 +35,7 @@ AnimSrcGraph {
  Debug AnimSrcGD "{53068B507795F804}" {
  }
  GraphFilesResourceNames {
-  "{1A5BAC0DCF6D5ABF}Assets/Weapons/Melee/workspaces/Melee_Shovel.agf"
+  "{1A5BAC0DCF6D5ABF}Assets/Weapons/Melee/workspaces/Melee_Base.agf"
  }
  DefaultRunNode "MasterControl"
 }
