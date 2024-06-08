@@ -9,15 +9,15 @@ BaseSource {
   AnimSrcWorkspacePreviewModel "{5AF8A0208A751B95}" {
    Model "{7297BDBDE223627F}Assets/Characters/Animation/AnimTestChar_USSR_01.xob"
   }
-  AnimSrcWorkspacePreviewModel "{563EF338E13AB791}" {
-   Model "{A043E13BAC03CF2C}Assets/Weapons/Grenades/M67/Grenade_M67.xob"
+  AnimSrcWorkspacePreviewModel "{618E962B27AF3CB1}" {
+   Model "{86583FFA2C86FB07}Assets/Weapons/Melee/melee.xob"
   }
  }
  ChildPreviewModels {
   AnimSrcWorkspaceChildPreviewModel "{618C95D24740EE1E}" {
    Enabled 1
    Model "{86583FFA2C86FB07}Assets/Weapons/Melee/melee.xob"
-   Bone "Scene_Root"
+   Bone "RightHandProp"
    Parent "{5AF8A0208A751B95}"
   }
  }

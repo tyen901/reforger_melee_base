@@ -1,35 +1,8 @@
 AnimSrcGraph {
  AnimSetTemplate "{27A7D4B7660BE77E}Assets/Weapons/Melee/workspaces/Melee_Base.ast"
  ControlTemplate AnimSrcGCT "{53068B507795F8EF}" {
-  Variables {
-   AnimSrcGCTVarInt Stance {
-    DefaultValue 0
-    MinValue 0
-    MaxValue 2
-   }
-   AnimSrcGCTVarInt State {
-    DefaultValue -1
-    MinValue -1
-    MaxValue 1
-   }
-   AnimSrcGCTVarFloat MovementSpeed {
-    DefaultValue 0
-    MinValue 0
-    MaxValue 3
-   }
-   AnimSrcGCTVarFloat ADSAdjust {
-    DefaultValue 1
-    MaxValue 1
-   }
-  }
-  Commands {
-   AnimSrcGCTCmd CMD_Pin_Action {
-   }
-  }
   GlobalTags {
    "WEAPON"
-   "GRENADE"
-   "M67"
   }
  }
  Debug AnimSrcGD "{53068B507795F804}" {

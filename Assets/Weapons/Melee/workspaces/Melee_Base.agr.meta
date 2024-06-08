@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Shovel.agr"
+ Name "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Base.agr"
  Configurations {
   AnimGraphResourceClass PC {
   }

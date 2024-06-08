@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{5964F2A479BD20E6}Prefabs/Props/Services/FireExtinguisherBox_01_Shovel.et"
+ Name "{E30AF0A9B2B56A34}Prefabs/Weapons/Core/Weapon_Melee_Base.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

@@ -1,0 +1,36 @@
+GenericEntity : "{E30AF0A9B2B56A34}Prefabs/Weapons/Core/Weapon_Melee_Base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Object "{86583FFA2C86FB07}Assets/Weapons/Melee/melee.xob"
+  }
+  SCR_MeleeAttackComponent "{618E962A7EA1EC78}" {
+  }
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemAnimationAttributes ItemAnimationAttributes "{619046B731F27775}" {
+     AnimationInstance "{41AABAE44257A657}anims/workspaces/player/player_main_pistol.asi"
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    WeaponAnimationComponent "{618E962D2CE610B8}" {
+     AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Base.agr"
+     AnimInstance "{D83FE76C4DC76161}Assets/Weapons/Melee/workspaces/Weapon_Melee.asi"
+     AlwaysActive 1
+     AnimInjection AnimationAttachmentInfo "{618E962CCCBEA817}" {
+      AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Base.agr"
+      AnimInstance "{6D0438DAFBBBA1EE}Assets/Weapons/Melee/workspaces/Player_Melee.asi"
+      BindingName "Weapon"
+     }
+     BindWithInjection 1
+     AnimVariablesToBind {
+      "State"
+     }
+    }
+   }
+   AllowedRaise "Only lowered"
+  }
+ }
+}

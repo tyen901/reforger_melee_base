@@ -1,7 +1,3 @@
 MatPBRBasic {
- ZEnable 0
- ZWrite 0
- AlphaMul 0
- BlendMode AlphaBlend
- CrossFade 0
+ BlendMode None
 }

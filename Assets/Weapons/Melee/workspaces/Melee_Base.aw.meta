@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{0A66224B198EFFC0}Assets/Weapons/Melee/workspaces/Melee_Shovel.aw"
+ Name "{0A66224B198EFFC0}Assets/Weapons/Melee/workspaces/Melee_Base.aw"
  Configurations {
   AnimWorkspaceResourceClass PC {
   }
