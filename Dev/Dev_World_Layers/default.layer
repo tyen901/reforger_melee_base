@@ -1,6 +1,8 @@
 GenericEntity : "{092D7EC6AC5CC1B1}Prefabs/Weapons/Core/Weapon_Melee_Knife.et" {
- coords 2206.893 53.437 2890.978
+ coords 2207.217 53.561 2891.122
+ angleZ 36.062
 }
-GenericEntity : "{809488C4984AC088}Prefabs/Weapons/Handguns/M9/Handgun_M9_base.et" {
- coords 2206.672 53.453 2891.512
+GenericEntity : "{3A80D12C899A22F6}Prefabs/Weapons/Core/Weapon_Melee_Shovel.et" {
+ coords 2207.082 53.803 2890.828
+ angleX 42.265
 }

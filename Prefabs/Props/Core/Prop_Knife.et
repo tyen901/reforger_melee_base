@@ -1,0 +1,12 @@
+GenericEntity : "{10C26F96EF7A8CF5}Prefabs/Props/Core/Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{CB4B410E5D99D4CF}Assets/Weapons/Attachments/Bayonets/Bayonet_M9/Bayonet_M9.xob"
+  }
+ }
+ coords 0 0 0
+ angleX 90
+ angleY 180
+ angleZ -180
+}

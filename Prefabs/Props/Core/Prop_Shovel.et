@@ -1,0 +1,12 @@
+GenericEntity : "{10C26F96EF7A8CF5}Prefabs/Props/Core/Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{DD5A93FBA0216BEA}Assets/Props/Services/FireExtinguisherBox_01/FireExtinguisherBox_01_Shovel.xob"
+  }
+ }
+ coords 0 0 0
+ angleX 90
+ angleY 180
+ angleZ -180
+}
