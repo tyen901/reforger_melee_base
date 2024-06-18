@@ -9,12 +9,10 @@ class SCR_MeleeAttackComponentClass: ScriptComponentClass
 
 class SCR_MeleeAttackComponent: ScriptComponent
 {
-    InputManager m_InputManager;
     IEntity m_Owner;
     IEntity m_Player;
+    InputManager m_InputManager;
     BaseItemAnimationComponent m_AnimationComponent;
-
-    bool m_IsBlocking;
 
     override void OnPostInit(IEntity owner)
     {
@@ -22,8 +20,6 @@ class SCR_MeleeAttackComponent: ScriptComponent
         m_InputManager = GetGame().GetInputManager();
         owner.SetFlags(EntityFlags.ACTIVE, false);
         SetEventMask(owner, EntityEvent.FRAME);
-
-        int mask = GetEventMask();
     }
 
     override void EOnActivate(IEntity owner)
@@ -65,11 +61,6 @@ class SCR_MeleeAttackComponent: ScriptComponent
 
         if (!inputContext)
             return;
-
-        if (m_IsBlocking)
-        {
-            return;
-        }
 
         inputContext.SetMeleeAttack(true);
     }
