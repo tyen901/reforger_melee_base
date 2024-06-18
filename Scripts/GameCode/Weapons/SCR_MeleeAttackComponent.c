@@ -13,6 +13,8 @@ class SCR_MeleeAttackComponent: ScriptComponent
     IEntity m_Player;
     InputManager m_InputManager;
     BaseItemAnimationComponent m_AnimationComponent;
+	
+	bool m_IsBlocking;
 
     override void OnPostInit(IEntity owner)
     {
