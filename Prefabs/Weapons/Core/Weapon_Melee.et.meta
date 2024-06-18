@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{3A80D12C899A22F6}Prefabs/Weapons/Core/Weapon_Melee_Shovel.et"
+ Name "{E30AF0A9B2B56A34}Prefabs/Weapons/Core/Weapon_Melee_Base.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

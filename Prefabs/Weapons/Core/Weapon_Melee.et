@@ -1,0 +1,10 @@
+GenericEntity : "{270339EB9ABACA05}Prefabs/Weapons/Core/Weapon_Melee_Base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{61A222790CE8E942}" {
+   Object "{86583FFA2C86FB07}Assets/Weapons/Melee/melee.xob"
+  }
+  WeaponComponent "{61A222790CE8E956}" {
+  }
+ }
+}

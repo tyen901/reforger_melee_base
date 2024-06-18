@@ -2,9 +2,52 @@ AnimSrcGraphFile {
  Sheets {
   AnimSrcGraphSheet Melee_Base {
    Nodes {
-    AnimSrcNodeSource MasterControl {
-     EditorPos 0.6 -32.4
+    AnimSrcNodeStateMachine MasterControl {
+     EditorPos -22 -39.5
+     states {
+      AnimSrcNodeState Idle {
+       EditorPos -21.9 -38.4
+       Child "Idles"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+     }
+    }
+    AnimSrcNodeStateMachine Idles {
+     EditorPos -21.866 -36.325
+     states {
+      AnimSrcNodeState IdleUncocked {
+       EditorPos -23.466 -35.225
+       Child "Source 37388"
+       StartCondition "!IsBlocking"
+      }
+      AnimSrcNodeState IdleCocked {
+       EditorPos -20.566 -35.225
+       Child "Source 36008"
+       StartCondition "IsBlocking"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{51B075DE6276E8FD}" {
+       ToState "IdleUncocked"
+       Duration "0.15"
+       Condition "!IsBlocking && HasVariableChanged(IsBlocking)"
+      }
+      AnimSrcNodeTransition "{51B075DE6276E8EA}" {
+       ToState "IdleCocked"
+       Duration "0.15"
+       Condition "IsBlocking && HasVariableChangedTo(IsBlocking, True)"
+      }
+     }
+    }
+    AnimSrcNodeSource "Source 37388" {
+     EditorPos -23.6 -33.6
      Source "Actions.Erc.Idle"
+     Looptype Loop
+    }
+    AnimSrcNodeSource "Source 36008" {
+     EditorPos -20.6 -33.6
+     Source "Actions.Erc.Blocking"
      Looptype Loop
     }
    }

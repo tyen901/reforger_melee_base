@@ -12,6 +12,9 @@ class SCR_MeleeAttackComponent: ScriptComponent
     InputManager m_InputManager;
     IEntity m_Owner;
     IEntity m_Player;
+    BaseItemAnimationComponent m_AnimationComponent;
+
+    bool m_IsBlocking;
 
     override void OnPostInit(IEntity owner)
     {
@@ -19,6 +22,7 @@ class SCR_MeleeAttackComponent: ScriptComponent
         m_InputManager = GetGame().GetInputManager();
         owner.SetFlags(EntityFlags.ACTIVE, false);
         SetEventMask(owner, EntityEvent.FRAME);
+
         int mask = GetEventMask();
     }
 
@@ -28,6 +32,8 @@ class SCR_MeleeAttackComponent: ScriptComponent
             return;
 
 	    m_InputManager.AddActionListener("MouseLeft", EActionTrigger.DOWN, PerformAttack);
+        m_InputManager.AddActionListener("MouseRight", EActionTrigger.DOWN, BlockDown);
+        m_InputManager.AddActionListener("MouseRight", EActionTrigger.UP, BlockUp);
     }
 
     override void EOnDeactivate(IEntity owner)
@@ -36,6 +42,8 @@ class SCR_MeleeAttackComponent: ScriptComponent
             return;
 
         m_InputManager.RemoveActionListener("MouseLeft", EActionTrigger.DOWN, PerformAttack);
+        m_InputManager.RemoveActionListener("MouseRight", EActionTrigger.DOWN, BlockDown);
+        m_InputManager.RemoveActionListener("MouseRight", EActionTrigger.UP, BlockUp);
     }
 
     void PerformAttack()
@@ -58,7 +66,27 @@ class SCR_MeleeAttackComponent: ScriptComponent
         if (!inputContext)
             return;
 
+        if (m_IsBlocking)
+        {
+            return;
+        }
+
         inputContext.SetMeleeAttack(true);
+    }
+
+    void BlockDown()
+    {
+        m_IsBlocking = true;
+    }
+
+    void BlockUp()
+    {
+        m_IsBlocking = false;
+    }
+
+    bool IsBlocking()
+    {
+        return m_IsBlocking;
     }
 }
 

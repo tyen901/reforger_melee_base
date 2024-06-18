@@ -1,44 +1,157 @@
-GenericEntity : "{E1F14DB52DBFBC57}Prefabs/Weapons/Core/Weapon_Base.et" {
- ID "CFBAA4B725411E45"
+GenericEntity {
+ ID "61A222790CE8E935"
  components {
-  WeaponSoundComponent "{5A8685198A9AEEDD}" {
-   Filenames {
-    "{B569B0FEFA8211FE}Sounds/Weapons/Handguns/M9/Weapons_Handguns_M9_Shot.acp" "{FF5A03919BDB8B9E}Sounds/Weapons/Handguns/M9/Weapons_Handguns_M9_Handling.acp" "{430CD8162D17C2FF}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_Pistol.acp" "{8D040E18DFEC29AF}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_HandGun.acp" "{D32144A00CA494A6}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_Pistol.acp"
-   }
+  SignalsManagerComponent "{61A222790CE8E93B}" {
   }
-  MeshObject "{CFBAA4B701F95D69}" {
-   Object "{86583FFA2C86FB07}Assets/Weapons/Melee/melee.xob"
+  WeaponSoundComponent "{61A222790CE8E940}" {
   }
-  SCR_MeleeAttackComponent "{619087EDD0014DDE}" {
+  MeshObject "{61A222790CE8E942}" {
   }
-  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
-   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
-    ItemDisplayName WeaponUIInfo "{619046B700191670}" {
+  SCR_MeleeAttackComponent "{61A27233A4A63B78}" {
+  }
+  SCR_WeaponAttachmentsStorageComponent "{61A222790CE8E943}" {
+   Attributes SCR_ItemAttributeCollection "{61A222790CE8E947}" {
+    ItemDisplayName WeaponUIInfo "{61A272331C0BE73C}" {
      Name "Melee"
      Description "Melee"
+     Icon "{6F06BF2013A995FB}Assets/Animals/Apis/Data/Apis_BCR.edds"
     }
-    ItemPhysAttributes ItemPhysicalAttributes "{619046B70F79A8B8}" {
-     Weight 0.2
-     SizeSetupStrategy Volume
+    ItemPhysAttributes ItemPhysicalAttributes "{61A272331FEAE90C}" {
+     Weight 0.1
     }
-    ItemAnimationAttributes ItemAnimationAttributes "{619046B731F27775}" {
-     AnimationInstance "{32965FEFBB738E5A}anims/workspaces/player/player_main.asi"
-     AnimationIKPose "{B26FF590CB1A7B6C}Assets/Weapons/Grenades/M67/anims/anm/p_m67_ik.anm"
+    ItemAnimationAttributes ItemAnimationAttributes "{61A272331008115D}" {
+     AnimationInstance "{42D4D966167FDF21}anims/workspaces/player/player_main_1h_melee.asi"
+    }
+    CustomAttributes {
+     AimingModifierAttributes "{61A222790CE8E94C}" {
+      ErectLimitsHorizontal -90 90
+      ErectLimitsVertical -90 90
+      CrouchLimitsHorizontal -90 90
+      CrouchLimitsVertical -90 90
+      ProneLimitsHorizontal -90 90
+      ProneLimitsVertical -90 90
+      LowerGunCollisionDistance 0.05
+     }
+     ItemMovementSwayAttributes "{61A222790CE8E950}" {
+     }
+     SCR_RecoilCameraShakeParams "{61A222790CE8E952}" {
+      m_fBlendOutTime 0.089
+      m_fMaxVelocity 15
+      m_vTranslationMin 0.004 0.004 0
+      m_vTranslationMax 0.005 0.005 0
+      m_fFOVModifier 0.985
+      m_vRotationImpulseMin 0.005 0.005 7
+      m_vRotationImpulseMax 0.012 0.012 8
+      m_fMinImpulseThreshold 0.01
+      m_fImpulseCrouchMagnitudeModifier 0.7
+      m_fImpulseProneMagnitudeModifier 1
+      m_fCrouchMagnitudeModifier 0.5
+      m_fProneMagnitudeModifier 0.33
+     }
+    }
+    m_SlotType SLOT_WEAPONS_STORAGE
+   }
+   StoragePurpose 32
+  }
+  WeaponComponent "{61A222790CE8E956}" {
+   components {
+    SightsComponent "{61A222790CE8E95E}" {
+     SightsPosition PointInfo "{61A222790CE8E960}" {
+     }
+    }
+    SCR_MeleeAnimationComponent "{61A27233A92580C4}" {
+     AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Base.agr"
+     AnimInstance "{D83FE76C4DC76161}Assets/Weapons/Melee/workspaces/Weapon_Melee.asi"
+     AlwaysActive 1
+     AnimInjection AnimationAttachmentInfo "{61A2723354C017CE}" {
+      AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Base.agr"
+      AnimInstance "{6D0438DAFBBBA1EE}Assets/Weapons/Melee/workspaces/Player_Melee.asi"
+      BindingName "Weapon"
+     }
+     BindWithInjection 1
+     AutoVariablesBind 1
     }
    }
-  }
-  SlotManagerComponent "{619087E724C09DAD}" {
-   Slots {
-    EntitySlotInfo Weapon {
-    }
+   SignalsSourceAccess SignalsSourceAccessClass "{61A222790CE8E962}" {
    }
-  }
-  WeaponComponent "{CFBAA4B706BA66E8}" {
-   AllowedRaise "Only lowered"
-   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+   obstructionTestBreakingThreshold 0.3
+   obstructionTestBBScale 0.2 0.1 0.05
+   sightsCameraRollScaler -1
+   UIInfo WeaponUIInfo "{61A222790CE8E964}" {
     Name "Melee"
-    Description "Melee"
+    Description "Melee Description"
+    m_MagIndicator SCR_MagazineIndicatorConfiguration "{565ECA2FE3F0F3FB}" : "{7C114BA7C59E198D}Configs/WeaponInfo/MagazineIndicators/box.conf" {
+    }
    }
+   WeaponSlotType "primary"
+  }
+  ActionsManagerComponent "{61A222790CE8E969}" {
+   ActionContexts {
+    UserActionContext "{61A222790CE8E96B}" {
+     ContextName "default"
+     Position PointInfo "{61A222790CE8E96D}" {
+     }
+    }
+    UserActionContext "{61A222790CE8E96E}" {
+     ContextName "bipod"
+     Position PointInfo "{61A222790CE814D8}" {
+     }
+     Radius 0.1
+    }
+    UserActionContext "{61A222790CE814C6}" {
+     ContextName "magazine"
+     Radius 0.1
+    }
+    UserActionContext "{61A222790CE814C7}" {
+     ContextName "firemode"
+     Radius 0.1
+    }
+   }
+   additionalActions {
+    SCR_EquipWeaponAction "{61A222790CE814C2}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{61A222790CE814C3}" {
+      Name "#AR-Inventory_Equip"
+     }
+    }
+    SCR_EquipWeaponHolsterAction "{61A222790CE814C0}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{61A222790CE814C1}" {
+      Name "#AR-Inventory_EquipHolster"
+     }
+     "Sort Priority" 1
+    }
+    SCR_PickUpItemAction "{61A222790CE814CE}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{61A222790CE814CF}" {
+      Name "#AR-Inventory_PickUp"
+     }
+     "Sort Priority" 2
+    }
+    SCR_WeaponAction "{61A222790CE814CC}" {
+     ParentContextList {
+      "bipod"
+     }
+     UIInfo UIInfo "{61A222790CE8381B}" {
+      Name "Bipod"
+     }
+     m_WeaponActionType Bipod
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{61A222790CEBAE6E}" {
+  }
+  RplComponent "{61A222790CEBAE6C}" {
+   "Rpl State Override" Runtime
+  }
+  Hierarchy "{61A222790CEBAE6A}" {
   }
  }
+ Flags 4194307
 }

@@ -1,4 +1,3 @@
 MatPBRBasic {
- AlphaMul 0
- BlendMode AlphaBlend
+ BlendMode None
 }

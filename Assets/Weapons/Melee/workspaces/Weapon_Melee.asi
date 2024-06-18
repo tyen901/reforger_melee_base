@@ -1,10 +1,5 @@
 AnimSetInstanceSource "{5E127C905CAEFC3F}" {
  Template "{27A7D4B7660BE77E}Assets/Weapons/Melee/workspaces/Melee_Base.ast"
- Lines {
-  AnimSetInstanceSource_Line "Actions.Erc.Idle" {
-   Resource "{B26FF590CB1A7B6C}Assets/Weapons/Grenades/M67/anims/anm/p_m67_ik.anm"
-  }
- }
  RBF AnimSetInstanceSourceRBFArray "{5AE4E2F8D9F17DED}" {
  }
 }

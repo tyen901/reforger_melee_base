@@ -3,6 +3,7 @@ AnimSetTemplateSource {
   AnimSetTemplateSource_AnimationGroup "{5190B003BFBD8BB3}" {
    Name "Actions"
    Animations {
+    "Blocking"
     "Idle"
    }
    Columns {
