@@ -1,8 +1,6 @@
 GenericEntity : "{092D7EC6AC5CC1B1}Prefabs/Weapons/Core/Weapon_Melee_Knife.et" {
- coords 2207.217 53.561 2891.122
- angleZ 36.062
+ coords 2207.121 53.741 2891.29
 }
 GenericEntity : "{3A80D12C899A22F6}Prefabs/Weapons/Core/Weapon_Melee_Shovel.et" {
- coords 2207.082 53.803 2890.828
- angleX 42.265
+ coords 2207.146 53.687 2890.956
 }

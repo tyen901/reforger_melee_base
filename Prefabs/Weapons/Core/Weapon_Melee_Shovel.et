@@ -26,20 +26,6 @@ GenericEntity : "{E30AF0A9B2B56A34}Prefabs/Weapons/Core/Weapon_Melee_Base.et" {
       PivotID ""
      }
     }
-    WeaponAnimationComponent "{619087E695264A67}" {
-     AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Base.agr"
-     AnimInstance "{D83FE76C4DC76161}Assets/Weapons/Melee/workspaces/Weapon_Melee.asi"
-     AlwaysActive 1
-     AnimInjection AnimationAttachmentInfo "{619087E695264A68}" {
-      AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Base.agr"
-      AnimInstance "{6D0438DAFBBBA1EE}Assets/Weapons/Melee/workspaces/Player_Melee.asi"
-      BindingName "Weapon"
-     }
-     BindWithInjection 1
-     AnimVariablesToBind {
-      "State"
-     }
-    }
    }
   }
  }

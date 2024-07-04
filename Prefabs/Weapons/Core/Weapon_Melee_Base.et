@@ -34,6 +34,20 @@ GenericEntity : "{E1F14DB52DBFBC57}Prefabs/Weapons/Core/Weapon_Base.et" {
    }
   }
   WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
+     AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Base.agr"
+     AnimInstance "{D83FE76C4DC76161}Assets/Weapons/Melee/workspaces/Weapon_Melee.asi"
+     AnimIkpose "{B26FF590CB1A7B6C}Assets/Weapons/Grenades/M67/anims/anm/p_m67_ik.anm"
+     AnimInjection AnimationAttachmentInfo "{61C86DA8F8D75D8F}" {
+      AnimGraph "{3555B2B751CE338F}Assets/Weapons/Melee/workspaces/Melee_Base.agr"
+      AnimInstance "{6D0438DAFBBBA1EE}Assets/Weapons/Melee/workspaces/Player_Melee.asi"
+      BindingName "Weapon"
+     }
+     BindWithInjection 1
+     AutoVariablesBind 1
+    }
+   }
    AllowedRaise "Only lowered"
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
     Name "Melee"

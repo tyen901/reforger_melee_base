@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F07E8DCB2CD143E0}Assets/Weapons/Melee/melee.anm"
+ Configurations {
+  FBXAnimResourceClass PC {
+  }
+  FBXAnimResourceClass XBOX_ONE : PC {
+  }
+  FBXAnimResourceClass XBOX_SERIES : PC {
+  }
+  FBXAnimResourceClass PS4 : PC {
+  }
+  FBXAnimResourceClass PS5 : PC {
+  }
+  FBXAnimResourceClass HEADLESS : PC {
+  }
+ }
+}
